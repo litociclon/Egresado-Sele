@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Litociclon",
+    "description": "hola sele jeeeeeeeeeeeee",
+    "image": "productImage-1673061148643-73988403.jpg",
+    "category": "Con Sele"
+  },
+  {
+    "id": 2,
+    "name": "rosalia",
+    "description": "que buena fiesta",
+    "image": "productImage-1673061281197-497658303.jpg",
+    "category": "De la fiesta"
+  },
+  {
+    "id": 3,
+    "name": "vanina",
+    "description": "el mejor lookkk sin duda",
+    "image": "productImage-1673061376432-155344204.jpg",
+    "category": "Los mejores look"
+  }
+]

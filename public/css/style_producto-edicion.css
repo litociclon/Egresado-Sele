@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(77,164,255,1) 70%, rgba(73,93,222,1) 100%);
+  }
+
+.editor{
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+
+}
+
+.prod-edit-text{
+    width: 85%;
+}
+
+.p-title{
+    background-color: orange;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color:white;
+    border-radius: 10px 10px 0 0 ;
+    padding: .5em;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+.prod-edit-img img{
+    margin: 0 auto;
+}
+
+
+.img{    
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-container input{    
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cat-op{
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.editar{
+    background-color: rgb(28, 161, 35);
+    color: white;
+    border:none;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.text-area{
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.text-danger{
+    color: red;
+    font-size: 12px;
+    font-style: italic
+}
+
+@media (min-width: 768px) {
+
+    .editor{
+        width: 70%;
+    }
+    .prod-edit-text{
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .editor{
+        width: 30%;
+    }
+    .prod-edit-text{
+        width: 80%;
+    }
+
+    
+    .editar:hover{
+        background-color: rgb(7, 92, 11);
+        color: white;
+        border:none;
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partials/head", {title: 'Editando: ' + product.name } )%>          
+    <link rel="stylesheet" href="/css/style_producto-edicion.css">
+
+
+    <body>
+    
+        <%- include("./partials/nav")%>
+        
+        
+            <div class="editor">
+        
+                <p class="p-title">Corrige los campos necesarios</p>
+        
+                
+                <img src="/img/products/<%= product.image %>" class="img">
+        
+        
+               
+                <div class="prod-edit-text">    
+                    
+                 <form action="/products/<%= product.id %>?_method=PUT" method="POST"  class ="editar_producto">
+        
+                    <div class="form-container">
+                        <label for="name">Nombre del producto</label>
+                        <input type="text" id="name" name="name"  placeholder="Ej: Zapatillas Reebok"  value="<%= product.name %>"> 
+                        <% if (locals.errors && errors.name) { %>
+                            <div class="text-danger">
+                             <%= errors.name.msg %>
+                            </div>
+                            <% } %>                        
+                     </div>           
+        
+                     <div class="form-container">
+                        <label for="category">Categoria</label>             
+                            
+                            <select name="category" id ="category"class="cat-op">        
+                                <option value="Hombre" <% product.category == "hombre" ? "selected" : null %> </option>Hombre</option>                        
+                                <option value="Mujer" <% product.category == "mujer" ? "selected" : null %> Mujer</option>                        
+                                <option value="Niños" <% product.category == "kid" ? "selected" : null %>Niños</option>
+                                <option value="Accesorios" <% product.category == "accesorios" ? "selected" : null %>Accesorios</option>                        
+                            </select>        
+                     </div>
+        
+                     <div class="form-container">
+                        <label for="name">Precio</label>
+                        <input type="text" id="price" name="price" value="$<%= product.price %>">
+                        <% if (locals.errors && errors.price) { %>
+                            <div class="text-danger">
+                             <%= errors.price.msg %>
+                            </div>
+                            <% } %>  
+                     </div>
+        
+                     <div class="form-container">
+                        <label for="name">Descuento</label>
+                        <input type="text" id="discount" name="discount" value="<%= product.discount %> %OFF">
+                     </div>
+        
+                     <div class="form-container">
+                        <label for="name">Descripcion del producto</label>                        
+                        <textarea name="description" id="description" class="text-area"><%= product.description %></textarea>
+                        <% if (locals.errors && errors.description) { %>
+                            <div class="text-danger">
+                             <%= errors.description.msg %>
+                            </div>
+                            <% } %>  
+                     </div>
+
+
+                     <div class="form-container">                        
+                         <button  type="submit" class="editar"> Guardar Cambios</button>
+                    </div>
+        
+                </form>
+        
+            </div>
+        </div>
+    </body>
+</html>

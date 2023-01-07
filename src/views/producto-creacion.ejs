@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partials/head")%>
+    <link rel="stylesheet" href="/css/style_producto-creacion.css">       
+        
+
+ <body>
+
+    <%- include("./partials/nav")%>
+    <main>
+
+        <div class="conteiner">
+
+            <p class="p-title">Ingresa tus datos e imagen y mensaje</p>
+
+            <form action="/products" method="post" enctype="multipart/form-data">
+
+                <div class="form-container">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa el producto">
+                    <% if (locals.errors && errors.name) { %>
+                        <div class="text-danger">
+                         <%= errors.name.msg %>
+                        </div>
+                        <% } %>  
+                     
+                </div>  
+                
+                <div class="form-container">
+                    <label for="name">Categoria</label>             
+                        
+                        <select name="category" id="category" class="cat-op">        
+                            <option>Con Sele</option>                        
+                            <option>De la fiesta</option>                        
+                            <option>Los mejores look</option>
+                                                 
+                        </select>        
+                </div>
+
+                <div class="form-container">
+                    <label for="name">Imagen</label>
+                    <input type="file" id="productImage" name="productImage" accept="">
+                    <% if (locals.errors && errors.productImage) { %>
+                        <div class="text-danger">
+                         <%= errors.productImage.msg %>
+                        </div>
+                        <% } %>  
+                </div>
+
+              
+
+        
+                <div class="form-container">
+                    <label for="name">Escrivi tu mensaje aca</label>
+                    <textarea class="text-area" id="description" name="description"></textarea>
+                    <% if (locals.errors && errors.description) { %>
+                        <div class="text-danger">
+                         <%= errors.description.msg %>
+                        </div>
+                        <% } %>  
+                </div>
+
+                <div class="form-container">
+                <button class="cargar" type="submit"> Cargar mensaje</button>
+                </div>
+
+            </form>
+        </div>
+</main>
+
+
+    <%- include("./partials/footer")%>
+    
+    </body>
+</html>
+
+
+

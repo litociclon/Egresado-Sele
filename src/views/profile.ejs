@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partials/head")%>
+    <link rel="stylesheet" href="/css/style_users.css">
+
+    <body>
+
+       <%- include("./partials/nav")%>
+
+	   <!--div><li class="text-conteiner"><a href="/users/logout">Logout</a></li></div-->
+
+
+	   <!-- Container -->
+	   <div class="card">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="text-conteiner">
+				<h2> <%= user.firstName %> </h2>
+				</div>
+
+				<div class="user-img">
+				<img src="/img/users/<%= user.image %>">
+				</div>
+				<br>
+				<br> <div class="text-conteiner">
+					<h3><%= user.email %></h3> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+
+
+
+
+
+
+       <%- include("./partials/footer")%>
+        
+    </body>
+</html>
+    

@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sora', sans-serif;
+    
+}
+main{
+    width: 90%;
+    margin: 0 auto;    
+}
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(77,164,255,1) 70%, rgba(73,93,222,1) 100%);
+  }
+
+.register{
+    background-color: white;    
+    width: 85%;    
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title-form{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    background-color: rgb(3, 189, 34);
+    text-align: center;    
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px 10px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form-container label{
+    padding: .3em;
+    font-size: 400;    
+    font-size: 12px;
+    margin: .7em
+}
+
+.btn-registro{
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(81, 214, 81); 
+  padding: .6em;
+  color:white;
+  font-weight: 400;  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border:none;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.form-container input{
+    width: 100%;
+    border: rgb(50, 139, 240) 1px solid ;
+    border-radius: 10px ;
+    padding: .5em
+
+}
+
+.form-container select{
+    width: 100%;
+    border: rgb(50, 139, 240) 1px solid ;
+    border-radius: 10px ;
+    padding: .5em
+}
+
+.form-container select option{
+    font-size: 11px;
+}
+
+.formularios{
+    width: 70%;
+}
+
+
+@media (min-width: 768px) {
+    .register{
+    width: 60%;  
+    }
+}
+
+@media (min-width: 1200px) {
+    .register{
+        width: 40%;  
+        }
+    
+    .btn-registro{
+        padding: 1em;
+        font-size: 16px;        
+    }
+
+    .btn-registro:hover{
+        background-color: rgb(0, 117, 20);    
+        transition: .6s;
+    }
+}

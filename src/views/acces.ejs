@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partials/head")%>
+    <link rel="stylesheet" href="/css/style_products.css">
+
+    <body>
+
+       <%- include("./partials/nav")%>
+
+       
+        <main>           
+                
+                <p class="titulo-principal">Productos que te pueden interesar<p>
+
+                <div class="articulos-conteiner">    
+
+                <% products.forEach(producto => { %>
+                    <% if(producto.category === "accesorios"){ %>
+
+
+                    <div class="articulo-card">
+
+                        <div class="img-prod">
+                            <a href="/products/<%= producto.id %>">
+                            <img src="/img/products/<%= producto.image %>">
+                            </a>
+                        </div>
+    
+                        <div class="text-prod">
+                           
+                            <p class="nombre-prod"><%= producto.name %></p>
+                            <p class="desc-prod"><%= producto.discount %>% OFF</p>
+                            <p class="precio-prod">$<%= producto.price %></p>
+                        </div>
+                </div>
+               
+                <% } %>      
+                <% }) %>       
+            
+        </main>
+        
+       <%- include("./partials/footer")%>
+        
+    </body>
+</html>

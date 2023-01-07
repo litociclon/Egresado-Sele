@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(77,164,255,1) 70%, rgba(73,93,222,1) 100%);
+  }
+
+main{
+    width: 96%;
+    margin: 0 auto;
+}
+
+.articulo{
+    margin-bottom: 3em;
+    background-color: white;
+    border-radius: 10px;    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.articulos-vista{
+    width: 100%;
+    display: flex;   
+    flex-direction: column;     
+    margin-bottom: 4em;
+}
+
+
+.img-articulo{
+   display: flex;
+   justify-content: center;
+
+}
+.img-articulo-img{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      
+}
+
+
+
+.talles{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;    
+}
+
+.categoria{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    background-color: rgb(3, 189, 34);
+    text-align: center;    
+    padding: .4em;
+    margin-bottom: 1em;
+    border-radius: 10px 10px 0 0;
+}
+
+.nombre{
+    color: rgb(0, 21, 114);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.precio{
+    color: rgb(16, 121, 16);
+    font-size: 16px;
+    text-align: center;
+}
+
+.color{
+    color: rgb(0, 21, 114);
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.talles{
+    margin:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+.talles-title{
+    color: rgb(0, 21, 114);
+    font-size: 15px;
+    text-align:center;
+    margin-bottom: 1em;
+}
+
+.lista-talles{
+    text-align: center;
+    margin: 1em;
+}
+.lista-talles a{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: .4em;
+    border:1px solid rgb(185, 185, 185);
+    border-radius: 10px ;
+    
+}
+
+
+.btn-buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+.btn-buy-btn{
+    padding: 1.5em;
+    background-color: rgb(3, 189, 34);
+    border:none;
+    border-radius: 10px;
+    color: white;    
+}
+
+
+.btn-carrito{
+    padding: .7em;
+    background-color: rgb(33, 115, 170);
+    border:none;
+    border-radius: 10px;
+    color: white;    
+}
+
+.btn-edit{
+    background-color: orange;
+    padding: .7em;
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+
+.btn-edit a{
+    text-decoration: none;    
+    color: white;
+}
+
+.btn-delete{
+    background-color: red;
+    padding: .7em;
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+
+.detalles{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.detail{
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(212, 212, 212);
+    padding: .5em;
+}
+
+.detail-p{
+    font-weight: 300;
+    font-size: 14px;
+   
+    padding: 1em;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+
+    .categoria{        
+        font-size: 16px;        
+    }
+
+    .nombre{        
+        font-size: 25px;        
+    }
+
+    .precio{        
+        font-size: 23px;
+        font-weight: 700;        
+    }
+
+    .color{     
+    font-size: 16px;    
+    }
+
+    .talles-title{        
+    color: rgb(0, 21, 114);
+     font-size: 25px;      
+    }
+
+    .lista-talles a{
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        padding: .7em;
+        border:1px solid rgb(185, 185, 185);
+        border-radius: 10px ;        
+    }
+
+    .talles{
+        margin-bottom: 4em;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: .1px;
+        
+    }
+
+    .btn-buy-btn{
+        padding: .6em;
+        font-size: 18px;
+        font-weight: 400;      
+     }         
+    
+    .btn-carrito{
+        padding: 1em;
+        font-size: 21px;
+        background-color: rgb(33, 115, 170);          
+    }    
+
+    .btn-edit{
+        padding: .2em;
+        font-size: 21px;
+    }
+
+    .btn-delete{
+        padding: .2em;
+        font-size: 21px;
+    }
+
+    .detail{
+    font-size: 24px;
+    }
+
+    .detail-p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+
+    .articulo{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin:0 ;
+        padding-bottom: 2em;
+        width: 50%;
+        height: 70%;       
+        border-radius: 10px;
+        border:solid 1 px black
+        
+    }
+
+    .articulos-vista{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: row-reverse;
+        gap:9em;
+    }
+
+    .btn-buy{
+        display: flex;
+        flex-direction: row;  
+        align-items: center;    
+        justify-content: center;
+    }
+
+    .img-articulo{
+        width: 30%;
+    }
+
+    .img-articulo-img{
+        width: auto;
+    }
+    
+    .nombre{        
+    font-size: 20px;        
+    }   
+
+    
+    .talles-title{      
+     font-size: 19px;          
+    }
+
+    .lista-talles a{
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        padding: .7em;
+        border:1px solid rgb(185, 185, 185);
+        border-radius: 10px ;        
+    }
+
+    
+    .btn-buy-btn{
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 400;      
+     }    
+    
+    .btn-carrito{
+        padding: 1em;
+        font-size: 15px;
+        background-color: rgb(33, 115, 170);          
+    }    
+
+    .btn-edit{
+        padding: 1em;
+        font-size: 15px;
+    }
+
+    .btn-delete{
+        padding: 1em;
+        font-size: 15px;
+    }
+
+    .btn-buy-btn:hover{
+        background-color:rgb(12, 126, 31); 
+        transition: .5s;
+    }
+
+    .btn-carrito:hover{
+        background-color: rgb(4, 61, 99);   
+        transition: .5s;
+    }
+
+    .btn-edit:hover{
+        background-color: rgb(122, 80, 0);
+        transition: .5s;     
+    }
+
+    .lista-talles a:hover{
+        background-color: black;
+        color:white;
+        transition: .5s;
+    }
+
+    .btn-delete:hover{
+        background-color: rgb(109, 0, 0);
+        transition: .5s;   
+    }
+
+}

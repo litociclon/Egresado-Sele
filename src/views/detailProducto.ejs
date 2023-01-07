@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include("./partials/head")%>
+    <link rel="stylesheet" href="/css/style_detailProducto.css">
+
+    <body>
+
+        <%- include("./partials/nav")%>
+
+        <main> 
+            <div class="articulo">
+                <p class="pe categoria">  <%=product.category%> </p>
+                <p class="pe nombre"><%= product.name %></p>
+                <p class="pe precio"><%= product.price %></p>                    
+               
+              </div>
+
+
+
+            <div class="articulos-vista">           
+
+               
+    
+                <div class="img-articulo">
+                    <img src="/img/products/<%= product.image %>" class ="img-articulo-img">                
+                </div>
+
+            </div>
+
+            <div class="detalles">
+                <h4 class="detail">Detalles</h4>
+                <p class="detail-p"><%= product.description%></p>        
+            </div>
+
+           
+                <div class="btn-buy">
+
+                   
+                    <button class="btn-edit" type="submit"><a href="/products/<%= product.id %>/edit">Corregir</a></button> 
+
+                    <form action="/products/<%= product.id %>?_method=DELETE" method="POST" >
+                        <button class="btn-delete" type="submit">Eliminar foto</button>   
+                    </form>
+                                    
+                </div>
+                
+        </main>
+
+    </body>
+
+    <%- include("./partials/footer")%>
+    
+    </body>
+</html>
+

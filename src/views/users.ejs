@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partials/head")%>
+    <link rel="stylesheet" href="/css/style_users.css">
+
+    <body>
+
+       <%- include("./partials/nav")%>
+
+       <main>
+
+       
+
+        <div class="conteiner">
+
+            <% users.forEach(usuario => { %>
+
+            <div class="card">
+
+                <div class="user-img">
+                    <img src="/img/users/<%= usuario.image %>"> 
+                </div>
+            
+                <div class="user-data">                   
+                    
+                            <div class="text-conteiner">
+                                <h4> Nombre  </h4>
+                                <p> <%= usuario.firstName %> </p>               
+                            </div>
+
+                            <div class="text-conteiner">
+                                <h4> Apellido  </h4>
+                                <p> <%= usuario.lastName %> </p>
+                            </div>
+                        
+                            <div class="text-conteiner">
+                                <h4> E-mail  </h4>
+                                <p> <%= usuario.email %> </p>
+                            </div>
+
+                            <div class="text-conteiner">                            
+                                <h4> Fecha de Nacimiento  </h4>
+                                <p> <%= usuario.dateOfBirth %> </p>
+                            </div>
+                        
+                            <div class="text-conteiner">
+                                <h4> Genero  </h4>
+                                <p> <%= usuario.gender %> </p>
+                            </div>
+                        
+                            <div class="text-conteiner">
+                                <h4> Nombre de Usuario  </h4>
+                                <p> <%= usuario.nameUser %> </p>        
+                            </div>  
+
+                        </div>
+                </div>                
+            </div>
+
+              
+                 
+         
+        
+                    
+         <% }) %> 
+
+        
+       
+       
+       </main>    
+       
+        
+       <%- include("./partials/footer")%>
+        
+    </body>
+</html>

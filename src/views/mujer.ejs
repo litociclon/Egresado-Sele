@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partials/head")%>
+    <link rel="stylesheet" href="/css/style_products.css">
+
+    <body>
+
+       <%- include("./partials/nav")%>
+
+       
+        <main>           
+                
+                <p class="titulo-principal">Fotos y mensajes<p>
+
+                <div class="articulos-conteiner">    
+
+                <% products.forEach(producto => { %>
+                    <% if(producto.category === "De la fiesta"){ %>
+
+
+                    <div class="articulo-card">
+
+                        <div class="img-prod">
+                            <a href="/products/<%= producto.id %>">
+                            <img src="/img/products/<%= producto.image %>">
+                            </a>
+                        </div>
+    
+                        <div class="text-prod">
+                           
+                            <p class="nombre-prod"><%= producto.name %></p>
+                           
+                        </div>
+                </div>
+               
+                <% } %>      
+                <% }) %>       
+            
+        </main>
+        
+       <%- include("./partials/footer")%>
+        
+    </body>
+</html>

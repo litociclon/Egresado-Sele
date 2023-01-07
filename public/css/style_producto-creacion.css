@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(170,206,250);
+    background: linear-gradient(8deg, rgba(170,206,250,1) 16%, rgba(255,255,255,1) 62%, rgba(210,236,255,1) 88%);
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto ;
+    padding: 0;    
+  }
+
+.conteiner{
+    width: 90%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;   
+}
+
+.crear_producto{
+    display:flex;
+    flex-direction: column;
+}
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;   
+    gap:.5em; 
+}
+
+.form-container input{
+    padding: .5em;
+    width: 100%;
+    border: 1px solid rgb(160, 160, 160);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.p-title{
+    background-color: rgb(12, 127, 235);
+    color: white;
+    text-align: center;
+    padding: .5em;    
+    border-radius: 10px 10px 0 0;
+}
+
+.cat-op{
+    width: 100%;
+    padding: .5em ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+
+.cargar{
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(49, 182, 55);
+    color: white;
+    padding: 1em;
+    border:none;
+    border-radius: 10px;    
+}
+
+.text-area{
+    width: 90%;
+    height: 5em;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+}
+
+.text-danger{
+    color: red;
+    font-size: 12px;
+    font-style: italic
+}
+
+@media (min-width: 768px) {
+
+    .conteiner{
+        width: 60%;       
+        margin-top: 1em;        
+    }
+
+    .form-container input{        
+        width: 80%;       
+    }
+
+    .cat-op{
+        width: 80%;       
+    }
+
+    .text-area{
+        width: 80%;
+        height: 10em;
+    }
+   }
+
+   @media (min-width: 1200px) {
+
+    .conteiner{
+        width: 40%;       
+        margin-top: 1em;        
+    }
+
+    .cargar:hover{
+        background-color: rgb(73, 252, 73);
+        
+        color:white;
+        transition:0.5s;
+    }
+
+
+   }
