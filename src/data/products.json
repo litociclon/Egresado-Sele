@@ -4,7 +4,9 @@
     "name": "Litociclon",
     "description": "hola sele jeeeeeeeeeeeee",
     "image": "productImage-1673061148643-73988403.jpg",
-    "category": "Con Sele"
+    "category": "Hombre",
+    "discount": " %OFF",
+    "price": "$"
   },
   {
     "id": 2,

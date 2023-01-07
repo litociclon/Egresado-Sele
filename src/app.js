@@ -17,7 +17,7 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 // para las cookies
 const cookies = require('cookie-parser');
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(session({
 	secret: "Shhh, It's a secret",
@@ -64,7 +64,7 @@ app.use('/api/products',apiProductsRouter);
 app.use('/api/users',apiUsersRouter);
 
 // llama al servidor
-app.listen(PORT, ()=>{
+app.listen(port, ()=>{
     console.log('Servidor corriendo en el puerto 3000')
 });
 
